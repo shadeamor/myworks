@@ -3,22 +3,8 @@ html {
   background-repeat: repeat;
   background-size: 1920px 1080px;
 }
-
 body {
-  /* BACKGROUND COLOR STARTS */
-  /*
-  	/* Old browsers */
-  /*  background: #141E30;
-  	/* Chrome 10-25, Safari 5.1-6 */
-  /*  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
-  	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /*  background: linear-gradient(-45deg, #35577D, #141E30);
-
-  /*BACKGROUND COLOR ENDS */
-
-  /*  background-image: url("background5.jpg");
-    background-size: cover; */
-  margin: 10;
+   margin: 10;
   padding: 35px 50px;
   font-family: papyrus;
   font-size: 28px;
@@ -28,11 +14,6 @@ body {
   text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
   1.5px 1.5px 0 #000;
 }
-/* the above is for the general font stile, background that is to be
-common for the entire web-page */
-
-/* First top Line in the page*/
-
 .first_header {
   font-family: "times new roman";
   text-align: right;
@@ -40,10 +21,6 @@ common for the entire web-page */
   font-style: italic;
   font-size: 24px;
 }
-
-
-/* DROPDOWN MENU and Bar STARTS*/
-
 .navbar {
   overflow: hidden;
   /*color of the bar starts*/
@@ -59,7 +36,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', end
   width: 100%;
   padding-left:
 }
-
 .navbar a {
     float: left;
     font-size: 16px;
@@ -68,17 +44,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', end
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .dropdown {
     float: left;
 }
-
 .navbar a {
   float:left;
 }
-
-
-
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -92,13 +63,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', end
     text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000;
 }
-
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: white;
     color: #141E30;
     text-shadow: none;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -108,7 +77,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', end
     z-index: 1;
     border-radius: 15px;
 }
-
 .dropdown-content a {
     float: none;
     color: #e8f0f1;
@@ -117,78 +85,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', end
     display: block;
     text-align: left;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
     border-radius: 15px;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* DROPDOWN Menu and Bar ENDS */
-
-/* the levels of which one overides what, is the p or h1 elements such as p {}
- not needed any additional coding in html, class noted as .description HTML
- coded as class="description", then the id which is noted as #introduction HMTL coded as
- id="introduction" Above are the 'base elements, so it is easier to code commonly
- and to have the site to be 'uniform' */
-
-/* Bottom of the page */
-
 .Links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: =100px;
   position: relative;
-
 }
-
 left-box {
-  /*to see the border of your grid
-    border: 2px solid black;
-    */
     text-align: left;
     font-size: 14px;
     padding-top: 25px;
     text-shadow: none;
-
   }
-
   .twitter_logo {
-
     width: 64px;
     height: 58px;
-
   }
-
   .external-link {
     color: #00b300;
   }
-
-
-
 right-box {
-
-  /*to see the border of your grid
-    border: 2px solid black;
-    */
     text-align: right;
     font-size: 14px;
     padding-top: 25px;
     text-shadow: none;
   }
-
   .left-pic {
-
     width: 64px;
     height: 58px;
-
   }
-
   .external-link {
     color: #00b300;
   }
-
-  /* Bottom of the page */
