@@ -1,16 +1,3 @@
-/* the levels of which one overides what, is the p or h1 elements such as p {}
- not needed any additional coding in html, class noted as .description HTML
- coded as class="description", then the id which is noted as #introduction HMTL coded as
- id="introduction" Above are the 'base elements, so it is easier to code commonly
- and to have the site to be 'uniform' */
-
-
-
-/*First Box ENDS*/
-
-/* first Box STARTS */
-
-/*about ramona STARTS */
 .about-ramona {
   border: 1px solid LightGrey;
   padding-top: 40px;
@@ -20,18 +7,13 @@
   border-radius: 15px;
 }
 
-/*buttons with back STARTS*/
-
 .books {
-  /*include the boarder line if u want a border around the box, */
-
   padding: 40px 0px;
   position: relative;
   text-align: center;
   width: 100%;
   margin-top: 20px;
   border-radius: 15px;
-
 }
 
 .books a {
@@ -54,7 +36,3 @@
   text-shadow: none;
   font-size: 18px;
 }
-
-/*buttons with back ENDS*/
-
-/*Second box ENDS*/
