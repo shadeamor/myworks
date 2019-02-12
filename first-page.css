@@ -1,0 +1,234 @@
+html {
+  background: url(background7.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*the bakcground color and the base for the coloour of the letters*/
+
+body {
+  /* BACKGROUND COLOR STARTS */
+  /*
+  	/* Old browsers */
+  /*  background: #141E30;
+  	/* Chrome 10-25, Safari 5.1-6 */
+  /*  background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+  	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*  background: linear-gradient(-45deg, #35577D, #141E30);
+
+  /*BACKGROUND COLOR ENDS */
+
+  /*  background-image: url("background5.jpg");
+    background-size: cover; */
+margin: 10;
+padding: 10px 50px;
+}
+
+h2, h3, h4, h5, h6, p, ul {
+color: #00b300;
+font-style: papyrus;
+}
+
+/* first line */
+h1 {
+  font-family: papyrus;
+  /*color: #e8f0f1; */
+  color:#00b300;
+  font-size: 50px;
+  padding-top: 100px;
+  margin-top: 200px;
+
+}
+/* first line */
+
+/* GRID TEMPLATE BEGINGS */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10vw 30vw 10vw;
+  grid-gap: 1em;
+}
+
+header {
+  grid-column: 1 / span 5;
+}
+
+main {
+  grid-column: 1 / span 5;
+}
+
+
+@media (max-width: 700px) {
+
+main {
+    grid-column: 1 / span 5;
+  }
+
+/*background color for main */
+
+
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+header, main {
+  /*include the line below line to see the border of your grid */
+  /*border: 1px solid LightGrey; */
+  /*include the line above line to see the border of your grid */
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-family: cursive;
+  font-weight: bolder;
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
+  1.5px 1.5px 0 #000;
+}
+
+header {
+  height: 10vw;
+}
+
+
+/* GRID TEMPLATE ENDS */
+
+/*opening book */
+.book {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 27.5rem;
+  height: 21.5rem;
+  perspective: 70rem;
+  text-shadow: none;
+}
+.cover {
+  background-color: black;
+  transform: rotateY(0deg);
+  width: 14.25rem;
+  height: 17.5rem;
+}
+.page {
+  top: 0.25rem;
+  left: 0.25rem;
+  background-color: #e9e6c4;
+  transform: rotateY(0deg);
+  width: 14rem;
+  height: 17rem;
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+  font-family: papyrus;
+}
+.page::before, .page::after {
+  display: block;
+  border-top: 1px /* dashed */ rgba(0, 0, 0, 0.3);
+  content: "";
+  padding-bottom: 1rem;
+}
+.cover, .page {
+  position: absolute;
+  padding: 1rem;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.cover.turn {
+  animation: bookCover 3s forwards;
+}
+.page.turn {
+  animation: bookOpen 3s forwards;
+}
+.page:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.page:nth-of-type(2) {
+  animation-delay: 0.33s
+}
+.page:nth-of-type(3) {
+  animation-delay: 0.66s;
+}
+.page:nth-of-type(4) {
+  animation: bookOpen150deg 3s forwards;
+  animation-delay: 0.99s;
+}
+.page:nth-of-type(5) {
+  animation: bookOpen30deg 3s forwards;
+  animation-delay: 1.2s;
+}
+.page:nth-of-type(6) {
+  animation: bookOpen55deg 3s forwards;
+  animation-delay: 1.25s;
+}
+@keyframes bookOpen {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 999;}
+}
+@keyframes bookCover {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 1;}
+}
+@keyframes bookOpen150deg {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(150deg);
+    z-index: 999;}
+}
+@keyframes bookOpen55deg {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(55deg);
+    z-index: 999;}
+}
+@keyframes bookOpen30deg {
+  50% { z-index: 999 }
+  100% {  transform: rotateY(30deg);
+    z-index: 999;}
+}
+
+/*opening book*/
+
+/*Main begings */
+
+/* text in header grid box */
+
+.first-header {
+  color: black;
+}
+
+/* text in meain grid box */
+
+.intro-text {
+  color: black;
+  padding: 40px 40px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+/*Main ends */
+
+/* sidebar */
+
+/*side bar ends */
+
+/* Footer begings */
+
+
+
+
+/* Footer ends */
