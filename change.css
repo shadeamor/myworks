@@ -1,0 +1,65 @@
+/* the levels of which one overides what, is the p or h1 elements such as p {}
+ not needed any additional coding in html, class noted as .description HTML
+ coded as class="description", then the id which is noted as #introduction HMTL coded as
+ id="introduction" Above are the 'base elements, so it is easier to code commonly
+ and to have the site to be 'uniform' */
+
+/*First box STARTS*/
+
+.first-box {
+  border: 1px solid LightGrey;
+  padding: 0px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* CSS can select HTML elements by their id attribute.
+To select an id element, CSS prepends the id name with a hashtag (#).
+For instance, if we wanted to select the HTML element, with an id= as in the
+example above, it would look like the example above: */
+
+
+/*First box ENDS*/
+/*Second box STARTS*/
+
+.second-box {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.second-box h2, p {
+  position: relative;
+  top: 0px; /* This will move the text 20px up */
+  left: 0px; /* This will move the text 20px to the right */
+  padding: 10px 10px;
+}
+
+.second-box p {
+
+  font-size: 22px;
+}
+
+/*Second box ENDS*/
+/*third box STARTS*/
+
+.third-box {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+/*third box ENDS*/

@@ -1,0 +1,83 @@
+/* the levels of which one overides what, is the p or h1 elements such as p {}
+ not needed any additional coding in html, class noted as .description HTML
+ coded as class="description", then the id which is noted as #introduction HMTL coded as
+ id="introduction" Above are the 'base elements, so it is easier to code commonly
+ and to have the site to be 'uniform' */
+
+/*First squre STARTS*/
+
+.introduction {
+  border: 1px solid LightGrey;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* CSS can select HTML elements by their id attribute.
+To select an id element, CSS prepends the id name with a hashtag (#).
+For instance, if we wanted to select the HTML element, with an id= as in the
+example above, it would look like the example above: */
+
+
+.intro-books {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.intro-books li {
+  list-style: none;
+  text-align: center;
+}
+
+h3.intro-books {
+  text-align: center;
+}
+
+h3.intro-books, h2.intro-books{
+  padding-left: 20px;
+
+}
+
+/*First squre ENDS*/
+
+
+
+/*buttons with the books STARTS*/
+
+.books {
+  /*include the boarder line if u want a border around the box, */
+
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 15px;
+
+}
+
+.books a {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: #00b300;
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.books a:hover {
+  background: white;
+  border: 1px Azure;
+  color: black;
+  text-shadow: none;
+  font-size: 18px;
+}
+
+/*buttons with the books ENDS*/

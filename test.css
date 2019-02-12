@@ -1,0 +1,9 @@
+/* Overall/Common formating */
+body {
+  background-image: url(background.jpg);
+
+}
+
+h1 {
+  font-family: cursive;
+}

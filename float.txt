@@ -1,0 +1,11 @@
+how to center and image, kind of using the float command:
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+when using float: left or float:right remeber the command clear:left or clear:right.
+
+The clear command is used when items bump into eachother, and to determine which item should move.

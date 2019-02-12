@@ -1,0 +1,70 @@
+When writing CSS rules, it's possible to require an HTML element to have two or more 
+CSS selectors at the same time.
+
+This is done by combining multiple selectors, which we will refer to as chaining. 
+For instance, if there was a .special class for h1 elements, the CSS would look like:
+
+h1.special {
+
+}
+The code above would select only the h1 elements that have a class of special. 
+If a p element also had a class of special, the rule in the example would not style the paragraph.
+
+as such if you have in html
+
+<h1 class=special>TESTING</h1>
+
+<p1 class=special>TESTING 2</p>
+
+and you write in your css
+
+h1.special {
+  color: red;
+}
+
+only h1 will be affected and not p1
+
+will not work if the code is:
+
+<div class="special">
+
+<h1>TEST ONE</h1>
+<h4>TEST TWO</h4>
+<p>TEST THREE</p>
+
+</div>
+
+To then, do a selector h1.special to only target h1, h1 must have the class="special" for it to work
+
+in order to affect only h1 in the explample above you have to code:
+
+.special h1 {
+  color: red;
+}
+
+this type of selection overrides the following code
+
+<div class="special">
+
+<h1 class="a">TEST ONE</h1>
+<h4>TEST TWO</h4>
+<p>TEST THREE</p>
+
+</div>
+
+h1.a {
+  color:black;
+}
+
+so if you have in your css:
+
+.special h1 {
+  color: red;
+}
+       &
+
+h1.a {
+  color:black;
+}
+
+the text will come out red
